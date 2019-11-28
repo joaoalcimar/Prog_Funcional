@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projeto Programação Funcional</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+        <h1>Projeto Programação funcional 2019.2</h1>
+        <h2>Selecione uma data</h2>
+        <input id="date" value="2017-03-01" type="date" onchange="selectDate(event);">
+        <h4>obs 1: A data inicial foi escolhida com base na data da primeira transação colocada</h4>
+        <h4>obs 2: Apenas mudanças no mês ou no ano influenciam alguma coisa</h4>
+        
+
+    </header>
+    <h2>Resultado com base nas pesquisas</h2>
+	<div>
+        <h3>Resultados relacionados com o mês selecionado</h3>
+
+		<div id="receitaMensal" class="valores">Receita do Mês: 0</div>
+		<div id="despesaMensal" class="valores">Despesa do Mês: 0</div>
+		<div id="sobraMensal" class="valores">Sobra do Mês: 0</div>
+		<div id="saldoMensal" class="valores">Saldo do Mês: 0</div>
+		<div id="saldoMaximo" class="valores">Saldo Maximo do Mês: 0</div>
+        <div id="saldoMinimo" class="valores">Saldo Minimo do  Mês: 0</div>
+
+        <h3>Resultados relacionados com o ano selecionado</h3>
+        
+		<div id="receitaMediaAnual" class="valores">Receita Média do Ano: 0</div>
+		<div id="despesaMediaAnual" class="valores">Despesa Média do Ano: 0</div>
+		<div id="sobraMediaAnual" class="valores">Sobra Média do Ano: 0</div>
+    </div>
+    <h2>Como voce gostaria de filtrar:</h2>
+    <select id="selectFilter" onchange="select( this.value );">
+        <option></option>
+        <option value="month">Mês</option>
+        <option value="year">Ano</option>
+    </select>
+    <h2>Filtro do mês/Ano selecionado</h2>
+    <table>
+        <main id="main"></main>
+    </table>
+	<script type="text/javascript" src="functions.js"></script>
+</body>
+</html>
